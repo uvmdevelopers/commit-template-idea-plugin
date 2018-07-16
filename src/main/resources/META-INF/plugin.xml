@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>com.jetbrains.git-commit-template</id>
+    <name>Git commit template</name>
+    <vendor email="info@uvm.cz" url="https://www.uvm.cz/">UVM</vendor>
+
+    <description><![CDATA[
+    Template for Git commits
+    ]]></description>
+
+     <!--please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products
+     uncomment to enable plugin in all products-->
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <group id="Commit.Button" text="Vygenerovat commit" description="Greeting menu" icon="/icons/load.png">
+            <add-to-group group-id="Vcs.MessageActionGroup" anchor="first"/>
+            <action id="Commit.Button" class="CreateCommitAction"/>
+        </group>
+    </actions>
+</idea-plugin>

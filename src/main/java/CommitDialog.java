@@ -1,5 +1,3 @@
-package com.leroymerlin.commit;
-
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.DialogWrapper;
 import org.jetbrains.annotations.Nullable;
@@ -7,10 +5,6 @@ import org.jetbrains.annotations.Nullable;
 import javax.swing.*;
 
 import static org.apache.commons.lang.StringUtils.isBlank;
-
-/**
- * @author Damien Arrachequesne
- */
 public class CommitDialog extends DialogWrapper {
 
     private final CommitPanel panel;
@@ -54,7 +48,7 @@ public class CommitDialog extends DialogWrapper {
         if (isBlank(panel.getClosedIssues())) {
             return "";
         }
-        return String.format("%n%n%s", "Closes " + panel.getClosedIssues());
+        return String.format("%n%n%s", "Closes #" + panel.getClosedIssues());
     }
 
     private static String breakLines(String input, int maxLineLength) {
