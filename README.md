@@ -6,7 +6,7 @@ Plugin pro phpstorm na správné šablony pro commit message
 
 Pomoci ozubenych kolecek vpravo nahore muzeme upravit url k .csv souborum.
 
-#Nastavení možností scope a typů commitů
+# Nastavení možností scope a typů commitů
 
 Moznosti scope a typy zmen se importuji do selectu z .csv ktere umistime na verejnou adresu.
 
